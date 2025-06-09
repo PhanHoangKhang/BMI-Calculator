@@ -12,23 +12,23 @@ class CheckResult:
 
     def check_result(self):
         if self.gender == "male":
-            if self.bmi < 18.2:
-                exact = 18.2 * (self.height * self.height)
+            if self.bmi < 18.5:
+                exact = 18.5 * (self.height * self.height)
                 needed = exact - self.weight
                 print(f"Need to gain {float(needed)} kg to be balanced")
-            elif self.bmi > 25.6:
-                exact = 25.6 * (self.height * self.height)
+            elif self.bmi > 24.9:
+                exact = 24.9 * (self.height * self.height)
                 needed = self.weight - exact
                 print(f"Need to lose {float(needed)} kg to be balanced")
             else:
                 print("Balanced!")
         elif self.gender == "female":
-            if self.bmi < 17.5:
-                exact = 17.5 * (self.height * self.height)
+            if self.bmi < 18.5:
+                exact = 18.5 * (self.height * self.height)
                 needed = exact - self.weight
                 print(f"Need to gain {float(needed)} kg to be balanced")
-            elif self.bmi > 25.7:
-                exact = 25.7 * (self.height * self.height)
+            elif self.bmi > 24.9:
+                exact = 24.9 * (self.height * self.height)
                 needed = self.weight - exact
                 print(f"Need to lose {float(needed)} kg to be balanced")
             else:
